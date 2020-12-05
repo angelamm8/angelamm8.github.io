@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+    <header>
+        <h1>Reserva hotelera</h1>
+    </header>
+
+    <section>
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="hotel" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Hotel</a>
+              <a class="nav-item nav-link" id="vuelo-hotel" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Vuelo + Hotel</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div id="contenedor-formulario" class="col-10">
+                    <div class="row">
+                        <div class="col-3">
+                            <div id="name" class="form-group">
+                                <label id="lform">Hotel o destino</label>
+                                <input id="nombre-hotel" type="text" placeholder="Hotel o destino">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div id="date" class="form-group">
+                                <label id="lform">Fecha</label>
+                                <input id="fecha" type="date">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div id="night" class="form-group">
+                                <label id="lform">Número de noches</label>
+                                <div id="noches-seleccionadas">0 noches</div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div id="rooms" class="form-group">
+                                <label id="lform">Habitaciones</label>
+                                <br>
+                                <span id="habitaciones"> 0 </span>
+                                <span>habitaciones</span>
+                                <span>·</span>
+                                <span id="huespedes"> 0</span>
+                                <span>huéspedes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <button id="enviar" class="btn btn-primary" type="button">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p class="curso">2º DAW</p>
+        <p class="nombre">Ángela Fuyin Machado Melián</p>
+    </footer>
+    
+</body>
+<script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/main.js"></script>
+</html>

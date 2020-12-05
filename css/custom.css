@@ -1,0 +1,176 @@
+html
+{
+    height: 100%;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header, footer
+{
+    background-color: rgb(1, 53, 128);
+    color: white;
+    text-align: center;
+    padding: 0.3em 0;
+    height: 70px;
+}
+
+
+.nav
+{
+    margin-top: 25px;
+    margin-left: 113px;
+}
+
+.nav-item
+{
+    background-color:  rgb(1, 53, 128);
+    color: white;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active
+{
+    background-color:  rgb(255, 215, 17);
+    color:  rgb(1, 53, 128);
+    border: none;
+}
+
+section
+{
+    background-image: url("../img/maldives.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+}
+
+#contenedor-formulario
+{
+    background-color: rgb(255, 215, 17);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#contenedor-formulario .form-group
+{
+    background-color: white;
+    padding: 10px;
+}
+
+#contenedor-formulario .col-3 + .col-3
+{
+    padding-left: 0;
+}
+
+#contenedor-formulario .form-group input
+{
+    width: 100%;
+    border: none;
+}
+
+#contenedor-formulario .form-group input:focus
+{
+    outline: none;
+}
+
+#lform
+{
+    font-weight: 600;
+}
+
+.opciones-noche .opcion
+{
+    padding: 3px .75rem;
+    margin: 0 -0.75rem;
+}
+
+.opciones-noche .opcion:hover
+{
+    background-color:  rgb(1, 53, 128);
+    color: white;
+}
+
+/*para que al añadir habitacion no haya tamaño máximo*/
+.popover
+{
+    max-width: none;
+}
+
+.habitaciones
+{
+    display: flex;
+}
+
+.habitaciones .habitacion
+{
+    width: 165px;
+    border-right: 2px solid #cecece;
+    margin-left: 10px;
+}
+
+.nhabquitar
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.nhabitacion
+{
+    color: #3cb371;
+}
+
+.eliminar
+{
+    margin-left: 15px;
+}
+
+.tselect
+{
+    margin-right: 5px;
+}
+
+.sedad
+{
+    background-color: #dc3545;
+    color: white;
+}
+
+.contenedor-botones
+{
+    margin-left: 10px;
+}
+
+.btnadd 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 120px;
+}
+
+.btnadd img
+{
+    width: 60px;
+    height: 60px;
+}
+
+#enviar
+{
+    background-color: #ff8c00;
+    border-color:  #ff8c00;
+}
+
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
