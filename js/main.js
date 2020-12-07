@@ -57,7 +57,7 @@ function insertarOpciones()
 
         grupo.opt.forEach(opcion => {
             const divopcion = document.createElement("div");
-            divopcion.classList.add("opcion");
+            divopcion.classList.add("opcion", "pointer");
             divopcion.textContent = `${opcion} noches`;
             divopcion.setAttribute("data-value", opcion); //le añadimos un atributo que sea su valor para obtenerlo y meterlo en el input
             divgrupo.appendChild(divopcion);
@@ -106,10 +106,11 @@ function iniciarHabitaciones()
     const divboton = document.createElement("div");
     const imgboton = document.createElement("img");
     imgboton.src = "./img/botonmas.svg";
-    divboton.classList.add("btnadd");
+    divboton.classList.add("btnadd", "pointer");
     
     const divhecho = document.createElement("span");
     divhecho.textContent = "Hecho";
+    divhecho.classList.add("pointer")
     divhecho.addEventListener("click", cerrarHabitaciones);
 
     divboton.appendChild(imgboton);
@@ -152,7 +153,7 @@ function crearHabitacion(numhab)
     {
         let eliminar = document.createElement("div");
         eliminar.textContent = "x";
-        eliminar.classList.add("eliminar");
+        eliminar.classList.add("eliminar", "pointer");
         eliminar.addEventListener("click", removeHabitacion);
         nhabquitar.appendChild(eliminar);
     }

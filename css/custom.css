@@ -82,6 +82,11 @@ section
     font-weight: 600;
 }
 
+.pointer
+{
+    cursor: pointer;
+}
+
 .opciones-noche .opcion
 {
     padding: 3px .75rem;
